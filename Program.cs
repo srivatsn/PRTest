@@ -1,17 +1,19 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace PRTest
 {
-    class Program {
+    static class Program {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            
+            var md5 = MD5.Create();
         }
     }
 
     class Foo
     {
-        public async void SomeMethod() { }
+        public void SomeMethod() { }
     }
 }
