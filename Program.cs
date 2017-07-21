@@ -14,6 +14,23 @@ namespace PRTest
 
     class Foo
     {
-        public void SomeMethod() { }
+        public void SomeMethod()
+        {
+            try
+            {
+                var emptyArray = new int[0];
+
+                DoSomeStuff();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void DoSomeStuff()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
